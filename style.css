@@ -1,0 +1,165 @@
+/* Reset básico para garantir consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* Gradiente azul atrativo */
+    background: linear-gradient(135deg, #6dd5ed, #2193b0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 40px 50px; /* Aumento do padding para um formulário mais espaçoso */
+    border-radius: 10px; /* Aumento do border-radius para um visual mais moderno */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Sombra mais intensa */
+    width: 90%;
+    max-width: 700px; /* Aumento da largura máxima */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 25px; /* Maior espaçamento abaixo do título */
+    color: #333333;
+    font-size: 28px; /* Aumento do tamanho da fonte do título */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Maior espaçamento entre os grupos de formulário */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px; /* Maior espaçamento abaixo dos labels */
+    color: #555555;
+    font-size: 16px; /* Aumento do tamanho da fonte dos labels */
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 12px 15px; /* Aumento do padding para campos maiores */
+    border: 1px solid #cccccc;
+    border-radius: 5px; /* Border-radius mais suave */
+    box-sizing: border-box;
+    font-size: 16px; /* Aumento do tamanho da fonte dos inputs */
+}
+
+.radio-group,
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Espaçamento entre os itens */
+}
+
+.radio-group label,
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #555555;
+    font-size: 16px; /* Aumento do tamanho da fonte das opções */
+}
+
+.radio-group input,
+.checkbox-group input {
+    margin-right: 8px; /* Maior espaçamento entre o input e o texto */
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #007BFF;
+    border: none;
+    color: #ffffff;
+    font-size: 18px; /* Aumento do tamanho da fonte do botão */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Modal Styles */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.5); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* Ajuste para centralizar melhor */
+    padding: 25px;
+    border: 1px solid #888;
+    width: 80%; 
+    max-width: 600px; /* Aumento da largura máxima do modal */
+    border-radius: 10px; /* Border-radius mais suave */
+    position: relative;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px; /* Aumento do tamanho da fonte do botão de fechar */
+    font-weight: bold;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+}
+
+#modalLink {
+    display: none;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#modalLink:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 30px 40px;
+        max-width: 90%;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .submit-btn {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+}
