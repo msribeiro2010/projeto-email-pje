@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (this.value === 'parte') {
                 openModal('Por favor, instale o aplicativo JTE disponível para Android ou iPhone. Caso tenha dificuldades ou precise de mais informações, entre em contato com a unidade responsável pelo processo. Para mais detalhes, consulte o manual do JTE:', 'https://pje.csjt.jus.br/manual/index.php/JTe');
             } else if (this.value === 'servidor') {
-                openModal('Por favor, abra um chamado no AssystNet - Canal para Usuário/Externo.', 'https://chatbot.trt15.jus.br/lhc/home.php');
+                openModal('Por favor, registre um chamado no AssystNet, acessando o canal destinado a Usuário/Interno.', 'https://chatbot.trt15.jus.br/lhc/home.php');
             }
         });
     });
