@@ -8,7 +8,7 @@
 body {
     font-family: Arial, sans-serif;
     /* Gradiente azul atrativo */
-    background: linear-gradient(135deg, #6dd5ed, #2193b0);
+    background: linear-gradient(135deg, #c8cccd, #cbe5ec);
     display: flex;
     justify-content: center;
     align-items: center;
